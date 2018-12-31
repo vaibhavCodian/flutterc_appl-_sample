@@ -143,6 +143,7 @@ class _TopShitState extends State<TopShit> {
                                     elevation: 7.0,
                                     child: GestureDetector(
                                       onTap: () async {// Share
+//                                         HERE IS THE PROBLEM I GUESS......>
                                        var res = await http.get(img);
                                         var documentDirectory = await getApplicationDocumentsDirectory();
                                         File file = new File(
